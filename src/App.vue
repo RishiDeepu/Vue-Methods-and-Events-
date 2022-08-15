@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <h1>{{ add(100, num) }}</h1>
+  <h1>{{ mul(120) }}</h1>
 </template>
 
 <script>
@@ -15,6 +16,9 @@ export default {
   methods: {
     add(a, b) {
       return a + b
+    },
+    mul(a) {
+      return a * this.num;
     }
   }
 }
